@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>document</title>
+
+<style>
+body{background: linear-gradient(black, white);
+    height: 800px;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial;
+}
+
+.content{float: left;
+    width:50%;
+    font-style: normal;
+    color: rgb(252, 249, 249);
+    text-align: left;
+    padding-left: 20px;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+button{
+    padding:20px;
+    border:6px solid rgb(12, 8, 8);
+    background:none;
+    color:rgb(8, 8, 8);
+    cursor:pointer;
+}
+
+button:hover{
+    background:rgb(29, 3, 145);
+    color:white;
+}
+
+/* Skills */
+.skills{float: right;
+    width:40%;
+}
+
+.bar{
+    background:#ddd;
+    height:10px;
+    margin:10px 0;
+}
+
+.fill{
+    height:10px;
+    background:rgb(2, 161, 24);
+}
+h1{text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(241, 235, 235);
+    text-underline-offset: inherit;
+}
+/* BOTTOM BAR */
+.foot{height: 25px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#0e0d0d;
+    color: rgb(243, 8, 8);
+    padding:10px;
+    text-align:center;
+    font-size:14px;
+}
+.coh{color: white;
+}
+</style>
+</head>
+
+<body>
+<!-- About -->
+
+    <h1>Welcome to My Portfolio</h1>
+
+    <div class="content">
+        <span>
+        <p>
+            I am a begginer web developer.
+            I can make simple personal web site.
+        </p>
+        </span>
+        <button onclick="toggleText()">Read More</button>
+    </div>
+
+    <div class="skills">
+        <p>English 52%</p>
+        <div class="bar"><div class="fill" style="width:52%"></div></div>
+
+        <p>Biology 65%</p>
+        <div class="bar"><div class="fill" style="width:65%"></div></div>
+
+        <p>Physics 60%</p>
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+
+        <p>Web 58%</p>
+        <div class="bar"><div class="fill" style="width:58%"></div></div>
+    </div>
+
+    <div class="foot"><div class="coh">Contact Me Email: </div><div class="Email">
+Rediet@gmail.com</div>
+</div>
+<script>
+function toggleText(){
+    let more = document.querySelector(".more");
+    let btn = document.querySelector("button");
+
+    if(more.style.display === "inline"){
+        more.style.display = "none";
+        btn.innerText = "Read More";
+    } else {
+        more.style.display = "inline";
+        btn.innerText = "Read Less";
+    }
+}
+</script>
+
+</body>
+</html>

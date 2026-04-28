@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact Form</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, white, hotpink, rgb(243, 53, 148), rgb(253, 107, 81));
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    .form-box {
+        width: 50%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: none;
+        background: #ddd;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 120px;
+        resize: none;
+    }
+
+    button {
+        background: red;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    button:hover {
+        background: darkred;
+    }
+
+    .contact-info {
+        width: 40%;
+        color: white;
+        font-size: 16px;
+    }
+
+    .contact-info h3 {
+        margin-top: 0;
+    }
+
+    .contact-info p {
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Form -->
+    <div class="form-box">
+        <input type="text" placeholder="your name">
+        <input type="email" placeholder="your email">
+        <textarea placeholder="message"></textarea>
+        <button>send message</button>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="contact-info">
+        <h3>Contact me anytime!</h3>
+        <p>📍 Addis Ababa</p>
+        <p>📞 +251-904-18-57-42</p>
+        <p>✉ contact@Rediet.org@email.com</p>
+        <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+</body>
+</html>
